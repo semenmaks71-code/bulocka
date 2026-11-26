@@ -26,7 +26,7 @@ export const IntroScene: React.FC<IntroSceneProps> = ({ onComplete }) => {
       {/* Бархатная текстура с градиентами */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: `url('/assets/intro-bg.png')` }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/intro-bg.png')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-burgundy-900/80 via-transparent to-burgundy-900/80" />
 

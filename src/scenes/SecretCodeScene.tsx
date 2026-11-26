@@ -43,7 +43,7 @@ export const SecretCodeScene: React.FC<SecretCodeSceneProps> = ({ onSuccess }) =
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('/assets/intro-bg.png')` }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/intro-bg.png')` }}
       />
       <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
 

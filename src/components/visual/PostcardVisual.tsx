@@ -10,7 +10,7 @@ export const PostcardVisual = forwardRef<HTMLDivElement, PostcardVisualProps>(({
       ref={ref}
       className={`relative w-80 h-96 md:w-[450px] md:h-[550px] rounded-lg overflow-hidden ${className}`}
       style={{
-        backgroundImage: `url('/assets/photo_7_2026-11-26_10-01-41.jpg')`,
+        backgroundImage: `url('${import.meta.env.BASE_URL}assets/photo_7_2026-11-26_10-01-41.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 40px rgba(201, 160, 48, 0.3)',

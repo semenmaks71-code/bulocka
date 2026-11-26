@@ -41,7 +41,7 @@ export const MemoryScene: React.FC<MemorySceneProps> = ({ onComplete }) => {
       {/* Background image with overlays */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: `url('/assets/photo_3_2026-11-26_10-01-41.jpg')` }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/photo_3_2026-11-26_10-01-41.jpg')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950/80 via-burgundy-900/60 to-burgundy-950/80" />
 

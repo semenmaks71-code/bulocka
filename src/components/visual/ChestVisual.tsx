@@ -17,7 +17,7 @@ export const ChestVisual: React.FC<ChestVisualProps> = ({ isOpen, onClick }) => 
         {/* Фоновое изображение шкатулки */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-          style={{ backgroundImage: `url('/assets/photo_2_2026-11-26_10-01-41.jpg')` }}
+          style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/photo_2_2026-11-26_10-01-41.jpg')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-burgundy-950 via-burgundy-900/80 to-burgundy-950/90" />
 
