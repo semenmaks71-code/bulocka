@@ -47,7 +47,7 @@ export const QuizScene: React.FC<QuizSceneProps> = ({ onComplete }) => {
       {/* Фоновое изображение с низкой прозрачностью */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-25"
-        style={{ backgroundImage: `url('/assets/Рубиновое сердце среди роз и золота.png')` }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/ruby-heart-bg.png')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950/90 via-burgundy-900/80 to-burgundy-950/90" />
 

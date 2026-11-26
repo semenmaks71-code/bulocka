@@ -17,7 +17,7 @@ export const SongScene: React.FC<SongSceneProps> = ({ onComplete }) => {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: `url('/assets/photo_4_2026-11-26_10-01-41.jpg')` }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/photo_4_2026-11-26_10-01-41.jpg')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950 via-burgundy-900/70 to-burgundy-950" />
 

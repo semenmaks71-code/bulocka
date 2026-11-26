@@ -48,7 +48,7 @@ export const FinaleScene: React.FC<FinaleSceneProps> = ({ onReset }) => {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-35"
-        style={{ backgroundImage: `url('/assets/photo_6_2026-11-26_10-01-41.jpg')` }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/photo_6_2026-11-26_10-01-41.jpg')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950/85 via-burgundy-900/70 to-burgundy-950/85" />
 

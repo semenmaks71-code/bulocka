@@ -42,7 +42,7 @@ export const GlowingHeart: React.FC<GlowingHeartProps> = ({ size = 280, classNam
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-2xl"
         style={{
-          backgroundImage: `url('/assets/Рубиновое сердце среди роз и золота.png')`,
+          backgroundImage: `url('${import.meta.env.BASE_URL}assets/ruby-heart-bg.png')`,
           boxShadow: '0 25px 60px rgba(0, 0, 0, 0.8), 0 0 50px rgba(201, 160, 48, 0.4), inset 0 0 20px rgba(255, 100, 100, 0.2)',
           border: '2px solid rgba(201, 160, 48, 0.5)',
         }}
