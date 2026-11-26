@@ -17,7 +17,7 @@ export const EnvelopeVisual: React.FC<EnvelopeVisualProps> = ({ isOpen, onOpen }
         {/* Фоновое изображение конверта */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-          style={{ backgroundImage: `url('/assets/Роскошный конверт с золотым сердцем.png')` }}
+          style={{ backgroundImage: `url('/assets/envelope-bg.png')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-burgundy-950 via-burgundy-900/80 to-burgundy-950/90" />
 

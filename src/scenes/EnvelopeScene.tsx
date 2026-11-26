@@ -27,7 +27,7 @@ export const EnvelopeScene: React.FC<EnvelopeSceneProps> = ({ onComplete }) => {
       {/* Фон слоями */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: `url('/assets/Роскошный конверт с золотым сердцем.png')` }}
+        style={{ backgroundImage: `url('/assets/envelope-bg.png')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-burgundy-950/90 via-burgundy-900/70 to-burgundy-950/90" />
 
