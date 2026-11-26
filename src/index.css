@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Роскошный фон с бархатной текстурой и виньеткой */
+body {
+  background-color: #0d0404;
+  color: #f5f0e6;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Бархатная текстура фона */
+.bg-velvet {
+  background:
+    radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.8) 100%),
+    radial-gradient(ellipse at 50% 0%, rgba(139, 0, 0, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(139, 0, 0, 0.1) 0%, transparent 40%),
+    linear-gradient(180deg, #1a0a0a 0%, #0d0404 50%, #1a0a0a 100%);
+  background-color: #0d0404;
+}
+
+/* Текстура бархата */
+.velvet-texture {
+  position: relative;
+}
+
+.velvet-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.03) 2px,
+      rgba(0,0,0,0.03) 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.02) 2px,
+      rgba(0,0,0,0.02) 4px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Виньетка */
+.vignette {
+  position: relative;
+}
+
+.vignette::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.7) 100%);
+  pointer-events: none;
+}
+
+/* Роскошные шрифты */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel Decorative', 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.05em;
+}
+
+/* Декоративный скрипт для акцентов */
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Элегантный serif для текста */
+.font-elegant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+}
+
+/* Золотые декоративные линии */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a030, transparent);
+  position: relative;
+}
+
+.gold-divider::before {
+  content: '♥';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #c9a030;
+  background: #0d0404;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+/* Декоративная рамка */
+.gold-frame {
+  position: relative;
+  border: 2px solid rgba(201, 160, 48, 0.4);
+  border-radius: 8px;
+}
+
+.gold-frame::before,
+.gold-frame::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c9a030;
+}
+
+.gold-frame::before {
+  top: -8px;
+  left: -8px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.gold-frame::after {
+  bottom: -8px;
+  right: -8px;
+  border-left: none;
+  border-top: none;
+}
+
+/* Мягкое золотое свечение */
+.gold-glow {
+  text-shadow:
+    0 0 10px rgba(201, 160, 48, 0.5),
+    0 0 20px rgba(201, 160, 48, 0.3),
+    0 0 30px rgba(201, 160, 48, 0.2);
+}
+
+/* Глубокие тени для роскоши */
+.luxury-shadow {
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(201, 160, 48, 0.1),
+    inset 0 1px 0 rgba(201, 160, 48, 0.1);
+}
+
+/* Кинематографичный заголовок */
+.cinematic-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f0e4b8 0%, #c9a030 50%, #f0e4b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+/* Декоративный акцент */
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ornament::before,
+.ornament::after {
+  content: '❧';
+  color: rgba(201, 160, 48, 0.6);
+  font-size: 1.2rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a030;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4b05a;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
